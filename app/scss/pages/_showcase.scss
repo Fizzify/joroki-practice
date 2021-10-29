@@ -1,0 +1,79 @@
+.showcase {
+  height: 400px;
+  background-color: $primaryColor;
+  position: relative;
+  color: $fontColor;
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  p {
+    margin: 1.25em 0;
+    color: $secondaryFontColor;
+  }
+
+  .grid {
+    grid-template-columns: 55% 45%;
+    gap: 1.875em;
+    overflow: visible;
+  }
+
+  .card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.25em;
+    margin: 0.625em;
+  }
+
+  .showcase-form {
+    color: black;
+    position: relative;
+    top: 3.75em;
+    height: 21.875em;
+    width: 25em;
+    padding: 2.5em;
+    justify-self: flex-end;
+    z-index: 100;
+    animation: slideInFromRight 1.2s ease;
+
+    .form-control {
+      margin: 1.875em 0;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      border: 0;
+      border-bottom: 1px solid black;
+      width: 100%;
+      padding: 0.1875em;
+      font-size: 1em;
+    }
+
+    input:focus {
+      outline: none;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: $bgColor;
+    transform: skewY(-3deg);
+  }
+
+  .showcase-btn {
+    margin-top: 2em;
+  }
+
+  .showcase-text {
+    animation: slideInFromLeft 1s ease-in
+  }
+}

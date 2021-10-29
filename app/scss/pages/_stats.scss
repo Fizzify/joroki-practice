@@ -1,0 +1,21 @@
+.stats {
+  padding-top: 6.25em;
+  color: $fontColor;
+  animation: slideInFromBottom 1s ease-in;
+
+  .stats-heading {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .grid {
+    h3 {
+      font-size: 2.1875rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $secondaryFontColor;
+    }
+  }
+}

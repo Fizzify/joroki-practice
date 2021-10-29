@@ -1,0 +1,36 @@
+.navbar {
+  background-color: $primaryColor;
+  height: 70px;
+  color: $fontColor;
+
+  a {
+    color: rgb(86, 120, 255);
+
+    transition: 0.3s ease;
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.3s ease;
+    }
+  }
+
+  ul {
+    display: flex;
+
+    a {
+      padding: 0.9em;
+      margin: 0 0.6em;
+      transition: 0.3s ease;
+      color: $fontColor;
+      
+      &:hover {
+        opacity: 0.6;
+        border-bottom: 2px white solid;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  .flex {
+    justify-content: space-between;
+  }
+}
